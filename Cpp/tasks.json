@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile & Run",
+            "type": "shell",
+            // Create Build Folder in Main Directory
+            "command": "clang++ -Wall -Werror -Wextra -Wshadow -Wdouble-promotion -Wundef -fno-common -Wconversion -O0 -std=c++11 '${relativeFile}' -o './Build/${fileBasenameNoExtension}.out' && ./Build/${fileBasenameNoExtension}.out"
+        }
+    ]
+}
