@@ -1,0 +1,11 @@
+CompileFlags:
+  Add: [-std=c++17]
+
+Diagnostics:
+  ClangTidy:
+    Add:
+      - modernize*
+      - google*
+      - clang-analyzer*
+      - hicpp*
+      - misc*
