@@ -1,0 +1,132 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 40,
+  "spacing": 0,
+  "margin-top": 12,
+  "margin-left": 16,
+  "margin-right": 16,
+  "margin-bottom": 0,
+  "modules-left": [
+    "custom/brand",
+    "custom/workspace1",
+    "custom/workspace2",
+    "custom/workspace3",
+    "custom/workspace4",
+    "custom/workspace5"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "idle_inhibitor",
+    "pulseaudio",
+    "network",
+    "custom/control",
+    "custom/theme",
+    "custom/power"
+  ],
+  "custom/brand": {
+    "format": "🎃  HAUNT",
+    "tooltip-format": "Open applications · Super + Space",
+    "on-click": "$HOME/.config/arian-hypr/scripts/actions.sh launcher",
+    "on-click-right": "$HOME/.config/arian-hypr/scripts/actions.sh help"
+  },
+  "clock": {
+    "format": "{:%a  %H:%M}",
+    "format-alt": "{:%d %B %Y}",
+    "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": "󰅶",
+      "deactivated": "󰾪"
+    },
+    "tooltip-format-activated": "Keep awake · click to allow idle lock",
+    "tooltip-format-deactivated": "Idle lock enabled · click to keep awake"
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰖁 Muted",
+    "format-icons": {
+      "default": [
+        "󰕿",
+        "󰖀",
+        "󰕾"
+      ]
+    },
+    "scroll-step": 3,
+    "on-click": "pavucontrol",
+    "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "tooltip-format": "{desc}"
+  },
+  "network": {
+    "format-wifi": "󰖩",
+    "format-ethernet": "󰈀",
+    "format-disconnected": "󰖪",
+    "tooltip-format": "{ifname} · {ipaddr}",
+    "on-click": "$HOME/.config/arian-hypr/scripts/actions.sh network"
+  },
+  "custom/control": {
+    "format": "󰒓",
+    "tooltip-format": "Control room · audio, network, notifications, clipboard",
+    "on-click": "$HOME/.config/arian-hypr/scripts/actions.sh settings",
+    "on-click-right": "$HOME/.config/arian-hypr/scripts/actions.sh help"
+  },
+  "custom/theme": {
+    "format": "👻",
+    "tooltip-format": "Switch Frost / Haunt · Super + Shift + T",
+    "on-click": "$HOME/.config/arian-hypr/scripts/theme.sh toggle"
+  },
+  "custom/power": {
+    "format": "⏻",
+    "tooltip-format": "Session menu",
+    "on-click": "$HOME/.config/arian-hypr/scripts/actions.sh power"
+  },
+  "custom/workspace1": {
+    "exec": "$HOME/.config/arian-hypr/scripts/actions.sh workspace-status 1",
+    "return-type": "json",
+    "interval": 2,
+    "format": "{text}",
+    "exec-on-event": true,
+    "on-click": "$HOME/.config/arian-hypr/scripts/actions.sh workspace 1",
+    "escape": true
+  },
+  "custom/workspace2": {
+    "exec": "$HOME/.config/arian-hypr/scripts/actions.sh workspace-status 2",
+    "return-type": "json",
+    "interval": 2,
+    "format": "{text}",
+    "exec-on-event": true,
+    "on-click": "$HOME/.config/arian-hypr/scripts/actions.sh workspace 2",
+    "escape": true
+  },
+  "custom/workspace3": {
+    "exec": "$HOME/.config/arian-hypr/scripts/actions.sh workspace-status 3",
+    "return-type": "json",
+    "interval": 2,
+    "format": "{text}",
+    "exec-on-event": true,
+    "on-click": "$HOME/.config/arian-hypr/scripts/actions.sh workspace 3",
+    "escape": true
+  },
+  "custom/workspace4": {
+    "exec": "$HOME/.config/arian-hypr/scripts/actions.sh workspace-status 4",
+    "return-type": "json",
+    "interval": 2,
+    "format": "{text}",
+    "exec-on-event": true,
+    "on-click": "$HOME/.config/arian-hypr/scripts/actions.sh workspace 4",
+    "escape": true
+  },
+  "custom/workspace5": {
+    "exec": "$HOME/.config/arian-hypr/scripts/actions.sh workspace-status 5",
+    "return-type": "json",
+    "interval": 2,
+    "format": "{text}",
+    "exec-on-event": true,
+    "on-click": "$HOME/.config/arian-hypr/scripts/actions.sh workspace 5",
+    "escape": true
+  }
+}

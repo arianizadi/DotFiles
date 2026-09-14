@@ -1,0 +1,23 @@
+{
+  "name": "HAUNT",
+  "icon": "🎃",
+  "subtitle": "A little midnight mischief.",
+  "bg": "100d17",
+  "panel": "1b1426",
+  "raised": "35203f",
+  "text": "f6e9ff",
+  "muted": "bd9ccc",
+  "accent": "ffa45c",
+  "second": "c69aff",
+  "line": "51325f",
+  "red": "ff8295",
+  "green": "b8d98a",
+  "yellow": "ffd089",
+  "workspace": [
+    "🎃",
+    "👻",
+    "🦇",
+    "🕸",
+    "🌙"
+  ]
+}
