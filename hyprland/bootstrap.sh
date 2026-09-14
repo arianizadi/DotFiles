@@ -30,4 +30,4 @@ main() {
     bash "$checkout/hyprland/install.sh" --vmware "$@" < /dev/tty
 }
 
-main "$@"
+main "$@" < /dev/tty
